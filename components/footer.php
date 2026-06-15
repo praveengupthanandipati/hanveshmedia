@@ -143,6 +143,15 @@
 <?php endif; ?>
 
 <script>
+// ── Page loader ──
+(function () {
+  var loader = document.getElementById('page-loader');
+  if (!loader) return;
+  window.addEventListener('load', function () {
+    loader.classList.add('hidden');
+  });
+})();
+
 // ── AOS Init ──
 AOS.init({ duration: 850, once: true, offset: 80 });
 

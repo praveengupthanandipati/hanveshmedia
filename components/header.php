@@ -52,6 +52,12 @@
 </head>
 <body<?= !empty($isInnerPage) ? ' class="inner-page"' : '' ?>>
 
+  <!-- ═══════════════════════════════ PAGE LOADER ═══════════════════════════════ -->
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-spinner"></div>
+    <p class="loader-brand"><span>HANVESH</span> MEDIA SOLUTIONS</p>
+  </div>
+
   <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
   <nav class="navbar navbar-expand-lg<?= !empty($isInnerPage) ? ' scrolled' : '' ?>" id="mainNav" data-aos="fade-down" data-aos-duration="850" data-aos-once="true">
     <div class="container">
